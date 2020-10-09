@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LargeList :list="list"></LargeList>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LargeList from './components/largeList'
+// import * as rrr from 'vue'
+const L = []
+for (let index = 0; index < 1000; index++) {
+  L.push(index)
+}
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LargeList
+  },
+  data(){
+    return {
+      list:L
+    }
+  },
+  mounted(){
   }
 }
 </script>
 
 <style>
 #app {
+  height: 500px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
