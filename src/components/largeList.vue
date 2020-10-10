@@ -25,8 +25,9 @@ export default{
     const {ctx} = getCurrentInstance()
     function onscroll(e){
       let scrollTop = ctx.$refs.list.scrollTop;
-      startindex.value = Math.floor(scrollTop / 60);
-      transY.value = scrollTop - (scrollTop % 60);
+      startindex.value = Math.floor(scrollTop / 120) * 2; // 隐藏两个的话乘以2，无意义，就是加深下理解....
+      transY.value = scrollTop - (scrollTop % 120);
+      console.log(scrollTop)
       console.log(scrollTop % 60)
     }
     
