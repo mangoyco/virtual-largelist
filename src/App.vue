@@ -1,5 +1,7 @@
 <template>
-  <LargeList :list="list"></LargeList>
+  <LargeList :list="list" v-slot="slotProps">
+    <span>{{slotProps.item}}</span>
+  </LargeList>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 

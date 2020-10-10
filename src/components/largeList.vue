@@ -2,7 +2,9 @@
   <div ref="list" class="list_outer" @scroll="onscroll($event)">
     <div class="heightholder" :style="{ height: listHeight + 'px' }"></div>
     <div class="real_list" :style="{ transform: getTransform }">
-      <div class="test" v-for="(item,index) in realList" :key="index">{{item}}</div>
+      <div class="test" v-for="(item,index) in realList" :key="index">
+        <slot :item="item"></slot>
+      </div>
     </div>
   </div>
   <!-- <div>{{num}}</div> -->
