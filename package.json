@@ -1,14 +1,17 @@
 {
   "name": "vlargelist",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vlargelist.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --mode production --target lib src/lib.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "wyc-npm-firststudy": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

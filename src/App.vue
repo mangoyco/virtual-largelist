@@ -6,7 +6,10 @@
 </template>
 
 <script>
-import LargeList from './components/largeList'
+import LargeList from 'wyc-npm-firststudy'
+console.log(LargeList)
+// import LargeList from './components/largeList'
+// console.log(LargeList)
 // import * as rrr from 'vue'
 const L = []
 for (let index = 0; index < 1000; index++) {
