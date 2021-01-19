@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --mode production --target lib src/lib.js"
+    "lib": "vue-cli-service build --mode production --target lib --name vlargelist src/lib.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
